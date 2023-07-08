@@ -14,13 +14,13 @@ We'll be looking to answer the following questions to help us better understand 
 King County House Data: a dataset that we were provided at the onset of the project. This file contains data for 21,597 homes built in King County from 1900 to 2015. Each home in the set contains information regarding features such as number of bedrooms/bathrooms, number of floors, square footage, zip code, condition, and more.  
 
 # First Model
-![image] (/Visualisations/correlation.png)
+![image] (Visualisations/correlation.png)
 The heatmap shows that sqft_living is the most correlated feature, so that will be our baseline model. 0.48733518973535617 for the train The validity score is 0.4945445156766466.
 We ran linear regression on our baseline model, and the r-squared value was.49. We will work hard to improve our model.
 
 # Second Model
 we started by checking linearity between price and independent variables.
-![image] (./Visualisations/RELATIONSHIP.png)
+![image] (Visualisations/RELATIONSHIP.png)
 From the above graphs, we can see that the following independent variables have a linear relationship to listing price:
 
 * sqft_living15
@@ -31,9 +31,9 @@ From the above graphs, we can see that the following independent variables have 
 
 # Third Model
 We check for collinearity between independent variabels
-![image] (./Visualisations/corr.png)
+![image] (Visualisations/corr.png)
 
-![image] (./Visualisations/ols1.png)
+![image] (Visualisations/ols1.png)
 
 Upon analyzing our data, we have observed significant collinearity among certain variables. To address this, we need to drop one variable from each pair to avoid redundancy. After considering our options, we decided to retain the variables grade, bathrooms, sqft_living15, bedrooms, and sqft_basement by dropping sqft_living and sqft_above.
 
@@ -49,16 +49,16 @@ Interestingly, bathrooms exhibit a negative correlation. One possible explanatio
 
 ## Checking For Assumptions
 Investigating Normality
-![image] (./Visualisations/normality.png)
+![image] (Visualisations/normality.png)
 
 Regression Plots
-![image] (./Visualisations/regression plots.png)
-![image] (./Visualisations/regression plots 2.png)
-![image] (./Visualisations/regression plots 3.png)
+![image] (Visualisations/regression plots.png)
+![image] (Visualisations/regression plots 2.png)
+![image] (Visualisations/regression plots 3.png)
 
 ## Final Model
 
-![image] (./Visualisations/compilation.png)
+![image] (Visualisations/compilation.png)
 
 This is how we anticipate our final model will perform.  To satisfy the linear regression assumptions, we made these changes to the final model. According to the graphs above, the four independent variables are homoscedastic, which means that the variance does not increase as the independent variable increases or decreases. We also know from the correlation graph that these aren't collinear. 
 
