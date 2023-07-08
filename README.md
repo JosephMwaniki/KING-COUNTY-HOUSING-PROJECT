@@ -14,7 +14,7 @@ We'll be looking to answer the following questions to help us better understand 
 King County House Data: a dataset that we were provided at the onset of the project. This file contains data for 21,597 homes built in King County from 1900 to 2015. Each home in the set contains information regarding features such as number of bedrooms/bathrooms, number of floors, square footage, zip code, condition, and more.  
 
 # First Model
-![image] (./Visualisations/correlation.png)
+![image] (/Visualisations/correlation.png)
 The heatmap shows that sqft_living is the most correlated feature, so that will be our baseline model. 0.48733518973535617 for the train The validity score is 0.4945445156766466.
 We ran linear regression on our baseline model, and the r-squared value was.49. We will work hard to improve our model.
 
