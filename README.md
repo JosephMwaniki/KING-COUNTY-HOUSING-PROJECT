@@ -68,7 +68,7 @@ Regression Plots
 
 ## Final Model
 
-![compilation](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/907bb46c-92ce-47f9-808b-80283998ad43)
+![compilation](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/12236d6d-b3f8-4466-be5c-faa7620e0b34)
 
 This is how we anticipate our final model will perform.  To satisfy the linear regression assumptions, we made these changes to the final model. According to the graphs above, the four independent variables are homoscedastic, which means that the variance does not increase as the independent variable increases or decreases. We also know from the correlation graph that these aren't collinear. 
 
