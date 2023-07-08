@@ -14,13 +14,17 @@ We'll be looking to answer the following questions to help us better understand 
 King County House Data: a dataset that we were provided at the onset of the project. This file contains data for 21,597 homes built in King County from 1900 to 2015. Each home in the set contains information regarding features such as number of bedrooms/bathrooms, number of floors, square footage, zip code, condition, and more.  
 
 # First Model
-![image] (Visualisations/correlation.png)
+
+![correlation](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/5b0f4a5c-2b06-41e8-80c9-3f73c88d4c05)
+
 The heatmap shows that sqft_living is the most correlated feature, so that will be our baseline model. 0.48733518973535617 for the train The validity score is 0.4945445156766466.
 We ran linear regression on our baseline model, and the r-squared value was.49. We will work hard to improve our model.
 
 # Second Model
 we started by checking linearity between price and independent variables.
-![image] (Visualisations/RELATIONSHIP.png)
+
+![RELATIONSHIP](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/c165e4ab-5514-4e9f-9612-8476532dfa5a)
+
 From the above graphs, we can see that the following independent variables have a linear relationship to listing price:
 
 * sqft_living15
@@ -31,9 +35,9 @@ From the above graphs, we can see that the following independent variables have 
 
 # Third Model
 We check for collinearity between independent variabels
-![image] (Visualisations/corr.png)
+![corr](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/82e15018-7d5c-4911-b060-9b597d5b2ef0)
 
-![image] (Visualisations/ols1.png)
+![ols1](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/78f86ba9-2297-492a-ac97-5c87472981d2)
 
 Upon analyzing our data, we have observed significant collinearity among certain variables. To address this, we need to drop one variable from each pair to avoid redundancy. After considering our options, we decided to retain the variables grade, bathrooms, sqft_living15, bedrooms, and sqft_basement by dropping sqft_living and sqft_above.
 
@@ -49,16 +53,19 @@ Interestingly, bathrooms exhibit a negative correlation. One possible explanatio
 
 ## Checking For Assumptions
 Investigating Normality
-![image] (Visualisations/normality.png)
+
+![normality](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/afd89f49-300b-4435-ae5b-2b6790b272dc)
 
 Regression Plots
-![image] (Visualisations/regression plots.png)
-![image] (Visualisations/regression plots 2.png)
-![image] (Visualisations/regression plots 3.png)
+
+![regression plots](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/11a0b97c-006c-4ee6-a24d-6775e7438128)
+![regression plots 2](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/09cb38a4-b0a1-4786-a83e-468c4cdc6239)
+![regression plots 3](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/66f59bf2-1d9f-4b8f-a619-c552e7c3dddb)
+
 
 ## Final Model
 
-![image] (Visualisations/compilation.png)
+![compilation](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/907bb46c-92ce-47f9-808b-80283998ad43)
 
 This is how we anticipate our final model will perform.  To satisfy the linear regression assumptions, we made these changes to the final model. According to the graphs above, the four independent variables are homoscedastic, which means that the variance does not increase as the independent variable increases or decreases. We also know from the correlation graph that these aren't collinear. 
 
