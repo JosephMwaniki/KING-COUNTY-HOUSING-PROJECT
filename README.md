@@ -52,7 +52,9 @@ However, it's important to note that the grade is essentially a categorical vari
 
 Interestingly, bathrooms exhibit a negative correlation. One possible explanation is that our model, taking into account the square footage, is attempting to determine the impact of bathrooms on price in the context of larger homes. In such cases, it is possible that very large and expensive homes do not command higher prices solely based on the number of bathrooms they possess.
 
-## Checking For Assumptions
+## REgression Results
+
+### Checking For Assumptions
 Investigating Normality
 
 ![normality](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/afd89f49-300b-4435-ae5b-2b6790b272dc)
