@@ -35,6 +35,7 @@ From the above graphs, we can see that the following independent variables have 
 
 # Third Model
 We check for collinearity between independent variabels
+
 ![corr](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/82e15018-7d5c-4911-b060-9b597d5b2ef0)
 
 ![ols1](https://github.com/JosephMwaniki/KING-COUNTY-HOUSING-PROJECT/assets/133277796/78f86ba9-2297-492a-ac97-5c87472981d2)
